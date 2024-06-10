@@ -86,7 +86,7 @@
     <form id="form">
         <input type="text" placeholder="Name" id="user_name">
         <input type="text" placeholder="Email" id="user_email">
-        <input type="text" placeholder="Phine" id="user_phone">
+        <input type="text" placeholder="Phone" id="user_phone">
         <div id="error"></div>
         <button id="order">Make an Order</button>
     </form>
@@ -102,7 +102,7 @@
             document.getElementById("main").style.display = "none";
             document.getElementById("form").style.display = "block";
 
-            document.getElementById("user_name").valeu = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
+            // document.getElementById("user_name").valeu = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
         });
 
         order.addEventListener("click", () => {
