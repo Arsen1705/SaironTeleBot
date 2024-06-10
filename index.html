@@ -111,15 +111,15 @@
             let email = document.getElementById("user_email").valeu;
             let phone = document.getElementById("user_phone").valeu;
 
-            if(name.length < 5) {
+            if(length(name) < 5) {
                 document.getElementById("error").innerText = "Name Error"
                 return
             }
-            if(email.length < 5) {
+            if(length(email) < 5) {
                 document.getElementById("error").innerText = "Email Error"
                 return
             }
-            if(phone.length < 5) {
+            if(length(phone) < 5) {
                 document.getElementById("error").innerText = "Phone Error"
                 return
             }
